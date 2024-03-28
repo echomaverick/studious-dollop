@@ -1,0 +1,50 @@
+.incidents-container {
+  text-align: center;
+  color: black;
+  padding-top: 100px;
+}
+.incidents {
+  color: black;
+}
+.incident-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.incident-box {
+  width: 300px;
+  background-color: #ccc;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  color: black;
+  margin-left: 20px;
+}
+
+.incident-box:hover {
+  transform: scale(1.05);
+}
+.incident-details-container {
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+}
+.button-back {
+  padding: 5px 20px;
+  background-color: #0b5ed7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-right: 290px;
+}
+
+.title-details h2 {
+  margin-top: -30px;
+}

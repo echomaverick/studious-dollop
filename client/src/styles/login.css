@@ -1,0 +1,110 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 50%;
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: royalblue;
+  color: white;
+  border: 1px solid #80bfff;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.login-form button.signup-btn {
+  background-color: #1266f1;
+  border: 1px solid #1266f1;
+}
+
+.login-form .error {
+  color: red;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.register-link {
+  color: #1266f1;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-input {
+  width: calc(100% - 30px);
+  padding-right: 30px;
+  position: relative;
+}
+
+.mode-toggle {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.show-password-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: black;
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 85%;
+  margin-left: 10px;
+  padding-top: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,104 @@
+.report-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.report-form {
+  padding: 20px;
+}
+
+.map-container {
+  height: 500px;
+}
+
+.report-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-form h2 {
+  color: black;
+}
+
+.report-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: black;
+}
+.report-header {
+  text-align: center;
+}
+.report-form input,
+.report-form textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.report-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.report-form button {
+  padding: 8px;
+  background-color: #0b5ed7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.location-button,
+.report-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.report-form button:not(:last-child) {
+  margin-right: 0;
+}
+
+.leaflet-marker-icon {
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+@media (max-width: 768px) {
+  .report-container {
+    height: auto;
+  }
+
+  .map-container {
+    height: 400px;
+  }
+
+  .report-form {
+    padding-bottom: 30px;
+  }
+  .report-header {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .location-button,
+  .report-button {
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .report-form button {
+    width: 30%;
+    margin-left: 550px;
+  }
+}

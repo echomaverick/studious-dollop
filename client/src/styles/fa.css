@@ -1,0 +1,19 @@
+.update-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  color: black;
+}
+.fa {
+  margin-right: 20px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d6efd;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  margin: 20px auto;
+}

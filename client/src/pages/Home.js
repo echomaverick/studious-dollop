@@ -8,7 +8,6 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [visibleNewsCount, setVisibleNewsCount] = useState(6);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {

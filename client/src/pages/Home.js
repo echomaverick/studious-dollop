@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import GridExample from "../components/NewsCards";
+import "../styles/home.css";
 
 const Home = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [visibleNewsCount, setVisibleNewsCount] = useState(6);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {

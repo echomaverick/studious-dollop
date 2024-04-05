@@ -19,7 +19,15 @@ export const AuthProvider = ({ children }) => {
     setLoggedIn(false);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const tokenExpirationTime = localStorage.getItem("token");
+    if (tokenExpirationTime) {
+      const expirationTime = new Date(tokenExpirationTime);
+      if (expirationTime < Date.now()) {
+        logout();
+      }
+    }
+  }, [logout]);
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, login, logout }}>

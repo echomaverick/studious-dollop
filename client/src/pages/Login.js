@@ -111,6 +111,8 @@ const Login = () => {
       );
 
       if (response.status === 200) {
+        const token = response.data.token;
+        localStorage.setItem("token", token);
         login(userData.email);
         navigate("/home");
       } else {

@@ -55,12 +55,6 @@ const UserSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-  userNotifications: [
-    {
-      type: mongoose.Schema.ObjectId,
-      ref: "notifications",
-    },
-  ],
   reportedIncidents: [
     {
       type: mongoose.Schema.ObjectId,

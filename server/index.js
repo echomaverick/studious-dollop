@@ -6,6 +6,7 @@ const cors = require("cors");
 const users = require("./resources/routes/user");
 const incidents = require("./resources/routes/incidents");
 const key = require("./resources/routes/key");
+const middleware = require("./resources/routes/middleware");
 
 const app = express();
 const server = http.createServer(app);
@@ -19,6 +20,7 @@ app.use(bodyParser.json());
 app.use("/api", users);
 app.use("/api", incidents);
 app.use("/api", key);
+app.use("/api", middleware);
 
 // Error handling middleware
 app.use((err, req, res, next) => {

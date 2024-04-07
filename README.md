@@ -106,6 +106,7 @@ The Crime Alert Web App is a full-stack application built to allow users to repo
   
 5. **Additional Notes**
    - If you are unable to find `package.json` and `package-lock.json` files in the repository, they might have been removed from version control. To recreate them and install dependencies, follow the instructions provided in the "Setup" section above.
+   - ⚠️ **WARNING:** This code is for development purposes and may contain errors. It differs from the production code.
 
 
 ## Contributing

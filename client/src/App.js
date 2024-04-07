@@ -20,6 +20,7 @@ import GetIncidentsReportedByUser from "./pages/GeIncidentsReportedByUser";
 import AuthCodeEntry from "./Auth/AuthCodeEntry";
 import FA from "./pages/2FA";
 import "./App.css";
+import TokenValidation from "./Auth/TokenValidation";
 
 const MemoizedNavigationBar = React.memo(NavigationBar);
 

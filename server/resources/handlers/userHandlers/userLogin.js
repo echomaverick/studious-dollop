@@ -25,12 +25,20 @@ const loginUser = async (req, res) => {
     }
 
     const token = jwt.sign({ userId: user._id }, process.env.TOKEN_KEY, {
-      expiresIn: "2m",
+      expiresIn: "15m",
+    });
+
+    const refreshToken = jwt.sign({ userId: user._id }, process.env.TOKEN_KEY, {
+      expiresIn: "60d",
     });
 
     console.log("Authentication token generated: ", token);
 
-    return res.status(200).json({ message: "User logged in successfully", token });
+    console.log("Refresh token generated", refreshToken);
+
+    return res
+      .status(200)
+      .json({ message: "User logged in successfully", token, refreshToken });
   } catch (error) {
     console.error("Error logging in:", error);
     return res.status(500).json({ message: "Internal Server Error" });

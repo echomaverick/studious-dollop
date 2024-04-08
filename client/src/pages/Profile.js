@@ -30,8 +30,11 @@ function ProfileCard() {
             setCodeConfirmed(data.user.codeConfirmed || false);
             console.log("User code", codeConfirmed);
             localStorage.setItem("codeConfirmed", data.user.codeConfirmed);
+          } else if (response.status === 504) {
+            setError("Dicka shkoi keq. Kërkesa ka tejkaluar kohën e lejuar. Provoni perseri me vone");
           } else {
             console.error("Error fetching user data:", response.statusText);
+            setError("Dicka shkoi keq. Ju lutemi provoni përsëri më vonë.");
           }
         }
       } catch (error) {
